@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 虚拟环境
+.venv/
+
+# vn.py 运行时数据（数据库、日志、策略状态）
+.vntrader/database.db
+.vntrader/*.sqlite*
+.vntrader/*.log
+.vntrader/log/
+.vntrader/cta_strategy/
+
+# 研究/数据缓存
+.ipynb_checkpoints/
+data/*.csv

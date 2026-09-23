@@ -1,0 +1,7 @@
+{
+    "datafeed.name": "akshare",
+    "datafeed.username": "",
+    "datafeed.password": "",
+    "database.name": "sqlite",
+    "database.timezone": "Asia/Shanghai"
+}
