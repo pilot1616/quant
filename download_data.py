@@ -55,7 +55,10 @@ def main() -> None:
     }
     interval = interval_map[interval_str]
 
-    # 默认起始日期：日线近2年，小时线近3个月
+    # 默认起始日期：日线近2年，小时线近3个月。
+    # 注意：新浪分钟线是"最近约1023根"的滚动窗口，若请求的起止范围
+    # 与窗口完全不相交（如已换月的活配合约），会取到 0 根——
+    # 遇到这种情况请显式指定起始日期，或改用日线。
     if start_str:
         start = datetime.strptime(start_str, "%Y-%m-%d")
     elif interval == Interval.DAILY:
